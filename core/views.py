@@ -1,5 +1,5 @@
-from django.http import  HttpResponse
+from django.shortcuts import render
 
 
 def sayHello(request):
-    return HttpResponse("hello for all")
+    return render(request, "home.html")
